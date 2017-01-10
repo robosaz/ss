@@ -1,10 +1,10 @@
 local function run(msg, matches)
-     if matches == 'بات' and is_sudo(msg) then    
-      return [[ بله مدیر چه کمکی از دستم برمیاد انجام بدم؟ ]]       
-   return 
-{
+     if matches[1] == 'ای' and is_sudo(msg) then   
+     return "بله"
+  end
+return {         
     patterns = {
-    "^بات$"
+    "^(ای)$"
   },
   run = run
 }
