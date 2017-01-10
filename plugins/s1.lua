@@ -1,10 +1,9 @@
 local function run(msg, matches)
-     if matches == 'ربات' and is_sudo(msg) then    
-      return [[ بله مدیر چه کمکی از دستم برمیاد انجام بدم؟ ]]
- 
-        end 
-   return 
-{
+     if matches == 'ربات' and is_sudo(msg) then   
+          end
+     return "شما دسترسی ندارید"
+  end
+return {         
     patterns = {
     "^(ربات)$"
   },
