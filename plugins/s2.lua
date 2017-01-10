@@ -1,10 +1,9 @@
-local function run(msg, matches)
-   if matches == is_sudo(msg) then
+local function run(msg, matches) 
     return [[ شاهین رضایی تبریزی ]]
 end return 
 {
     patterns = {
-    "^ربات$"
+    "^سازنده$"
   },
   run = run
 }
