@@ -4,7 +4,7 @@ local function run(msg, matches)
 end return 
 {
     patterns = {
-    "^سازنده$"
+    "^(سازنده)$"
   },
   run = run
 }
