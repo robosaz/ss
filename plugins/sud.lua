@@ -1,11 +1,12 @@
 local function run(msg, matches)
-  if matches[1] == 'شاهین' and is_admin(msg) then
-  return [[ با سازنده من کاری دارین؟ مدیر محترم ]]
+    if matches[1] == 'ربات' and is_sudo(msg) then
+     if msg.to.type == 'channel' then
+      return [[ بله مدیر چه کمکی از دستم برمیاد انجام بدم؟ ]]
 end return 
 {
     patterns = {
-    "^(شاهین)$"
+    "^(ربات)$"
   },
   run = run
 }
-end
+
