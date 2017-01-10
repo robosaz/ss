@@ -1,5 +1,6 @@
 local function run(msg, matches)
-  if matches[1] == 'سازنده' and is_sudo(msg) theh
+  	-- If sender is sudo then re-enable the channel
+	if is_sudo(msg) then
     return [[ شاهین رضایی تبریزی ]]
 end return 
 {
