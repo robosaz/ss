@@ -406,7 +406,7 @@ end
 
 local function run(msg, matches)
     chat_id =  msg.to.id
-    if matches[1] == 'ban' then
+    if matches[1] == 'بلاک' then
         if permissions(msg.from.id, msg.to.id, "ban") then
             local chat_id = msg.to.id
             local chat_type = msg.to.type
